@@ -1,5 +1,5 @@
 # ChrisMok's GPU Server Documentation
-Welcome to ChrisMok's GPU server documentation! If you are interested in the documentation, please refer to the website: https://github.com/ChrisMokServer/ChrisMokServer-Docs
+Welcome to ChrisMok's GPU server documentation! If you are interested in the documentation, please refer to the website: https://chrismokserver.github.io/ChrisMokServer-Docs/
 
 
 ## Introduction
