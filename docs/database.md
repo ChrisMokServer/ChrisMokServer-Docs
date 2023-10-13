@@ -1,5 +1,8 @@
 # Database
 
-| name  | source | local | size |
-|:-:|:-:|:-:|:-:|
-| AlphaFold2  | https://github.com/google-deepmind/alphafold  | /mnt/data1/jiezhu/databases/structure/alphafold/ | 2.6 TB |
+| name          | source                                                                                                                                        | version                        | local                                                                                    | size   |
+|:--------------|:----------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------|:-----------------------------------------------------------------------------------------|:-------|
+| AlphaFold2    | [https://github.com/google-deepmind/alphafold](https://github.com/google-deepmind/alphafold)                                                  | DB downloaded on July 20, 2023 | /mnt/data1/jiezhu/databases/structure/alphafold/                                         | 2.6 TB |
+| MetaPhlAn4    | [https://github.com/biobakery/MetaPhlAn](https://github.com/biobakery/MetaPhlAn)                                                              | V3 & V4                        | /mnt/data1/jiezhu/databases/ecogenomics/MetaPhlAn                                        | 49 GB  |
+| phanta        | [https://github.com/bhattlab/phanta](https://github.com/bhattlab/phanta)                                                                      | V1                             | /mnt/data1/jiezhu/databases/ecogenomics/phanta                                           | 62 GB  |
+| Gencode_human | [https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_39/](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_39) | V39                            | /mnt/data1/jiezhu/databases/ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_39 | 80 GB  |

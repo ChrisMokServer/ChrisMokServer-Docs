@@ -1,17 +1,17 @@
 # ChrisMok's GPU Server Documentation
-Welcome to ChrisMok's GPU server documentation! If you are interested in the documentation, please refer to the website: https://chrismokserver.github.io/ChrisMokServer-Docs/
+Welcome to ChrisMok's GPU server documentation! If you are interested in the documentation, please refer to the website: [https://chrismokserver.github.io/ChrisMokServer-Docs/](https://chrismokserver.github.io/ChrisMokServer-Docs/).
 
 
 ## Introduction
 
 + All documentation is written in markdown which makes it easy to contribute to the docs (see below)
-+ Website is rendered with mkdocs and the mkdocs-material theme and is hosted on GitHub pages
++ Website is rendered with *mkdocs* and the *mkdocs-material* theme and is hosted on GitHub pages
 + New commits to main are automatically built and deployed to the gh-pages branch
 
 
 ## Contributing
 
-You are welcome to open a pull request for changes to the documentation. If you want to make larger changes and you would like to see how they would appear on the rendered site, you can run mkdocs locally.
+You are welcome to open a pull request for changes to the documentation. If you want to make larger changes and you would like to see how they would appear on the rendered site, you can run *mkdocs* locally.
 
 ```
 # Install dependencies
@@ -28,4 +28,4 @@ mkdocs serve
 
 
 ## Reference
-+ https://github.com/IKIM-Essen/ClusterDocs
++ [https://github.com/IKIM-Essen/ClusterDocs](https://github.com/IKIM-Essen/ClusterDocs)
