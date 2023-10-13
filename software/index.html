@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation" class="md-skip">
+        <a href="#software" class="md-skip">
           Skip to content
         </a>
       
@@ -246,23 +246,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#get-started" class="md-nav__link">
+    Get Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Get Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mamba-or-micromamba" class="md-nav__link">
+    mamba or micromamba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    Others
+  </a>
+  
+    <nav class="md-nav" aria-label="Others">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#install-docker" class="md-nav__link">
     Install docker
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#install-nvidia-container-toolkit" class="md-nav__link">
     Install nvidia container toolkit
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark" class="md-nav__link">
-    Benchmark
+        
+          <li class="md-nav__item">
+  <a href="#gpu-performance-benchmark" class="md-nav__link">
+    GPU performance Benchmark
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -346,23 +379,56 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#get-started" class="md-nav__link">
+    Get Started
+  </a>
+  
+    <nav class="md-nav" aria-label="Get Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mamba-or-micromamba" class="md-nav__link">
+    mamba or micromamba
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#others" class="md-nav__link">
+    Others
+  </a>
+  
+    <nav class="md-nav" aria-label="Others">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#install-docker" class="md-nav__link">
     Install docker
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#install-nvidia-container-toolkit" class="md-nav__link">
     Install nvidia container toolkit
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark" class="md-nav__link">
-    Benchmark
+        
+          <li class="md-nav__item">
+  <a href="#gpu-performance-benchmark" class="md-nav__link">
+    GPU performance Benchmark
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -381,19 +447,63 @@
                   
 
 
-<h1 id="installation">Installation</h1>
-<h2 id="install-docker">Install docker</h2>
-<p>https://docs.docker.com/engine/install/ubuntu/</p>
-<h2 id="install-nvidia-container-toolkit">Install nvidia container toolkit</h2>
-<p>https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/1.13.5/install-guide.html#install-guide</p>
-<h2 id="benchmark">Benchmark</h2>
-<p>https://catalog.ngc.nvidia.com/orgs/hpc/containers/lattice-microbes
-https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara/containers/single-cell-examples_rapids
-https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-polish
-https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-assembly
-https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-classify-reference
-https://catalog.ngc.nvidia.com/orgs/hpc/containers/autodock
-https://catalog.ngc.nvidia.com/orgs/hpc/teams/foldingathome/containers/fah-gpu</p>
+<h1 id="software">Software</h1>
+<h2 id="get-started">Get Started</h2>
+<h3 id="mamba-or-micromamba">mamba or micromamba</h3>
+<p>Basically, you need to create a Conda environment. Based on the documentation here: <a href="https://mamba.readthedocs.io/en/latest/mamba-installation.html">https://mamba.readthedocs.io/en/latest/mamba-installation.html</a>,
+we suggest you to install a very fresh and basic environment by installing mamba from Mmabaforge distribution: <a href="https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh">https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh</a>.</p>
+<p>After install mamba successfully, you can install many software into basic environment or create new environment to install software.
+Of course, you also can activate other exists environment using <code>mamba activate</code>.</p>
+<p>Below are some environment which contains some commonly used bioinformatics software.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">environment name</th>
+<th style="text-align: left;">full path</th>
+<th style="text-align: left;">software</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">biobakery4</td>
+<td style="text-align: left;">/home/jiezhu/.conda/envs/biobakery4</td>
+<td style="text-align: left;">metaphlan4 v4.0.6</td>
+</tr>
+</tbody>
+</table>
+<h2 id="others">Others</h2>
+<h3 id="install-docker">Install docker</h3>
+<ul>
+<li><a href="https://docs.docker.com/engine/install/ubuntu/">https://docs.docker.com/engine/install/ubuntu/</a></li>
+</ul>
+<h3 id="install-nvidia-container-toolkit">Install nvidia container toolkit</h3>
+<ul>
+<li><a href="https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/1.13.5/install-guide.html#install-guide">https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/1.13.5/install-guide.html#install-guide</a></li>
+</ul>
+<h3 id="gpu-performance-benchmark">GPU performance Benchmark</h3>
+<ul>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/hpc/containers/lattice-microbes">https://catalog.ngc.nvidia.com/orgs/hpc/containers/lattice-microbes</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara/containers/single-cell-examples_rapids">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara/containers/single-cell-examples_rapids</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-polish">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-polish</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-assembly">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-assembly</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-classify-reference">https://catalog.ngc.nvidia.com/orgs/nvidia/teams/clara-agx/containers/agx-metagenomics-classify-reference</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/hpc/containers/autodock">https://catalog.ngc.nvidia.com/orgs/hpc/containers/autodock</a></p>
+</li>
+<li>
+<p><a href="https://catalog.ngc.nvidia.com/orgs/hpc/teams/foldingathome/containers/fah-gpu">https://catalog.ngc.nvidia.com/orgs/hpc/teams/foldingathome/containers/fah-gpu</a></p>
+</li>
+</ul>
 
 
 
