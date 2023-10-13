@@ -7,7 +7,7 @@ Basically, you need to create a Conda environment. Based on the documentation he
 we suggest you to install a very fresh and basic environment by installing mamba from Mmabaforge distribution: [https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh](https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh).
 
 After install mamba successfully, you can install many software into basic environment or create new environment to install software.
-Of course, you also can activate other exists environment using `mamba activate`.
+Of course, you also can activate other exists environment using `mamba activate /full path of exists env`. For example, ```mamba activate /home/jiezhu/.conda/envs/biobakery4```.
 
 Below are some environment which contains some commonly used bioinformatics software.
 
